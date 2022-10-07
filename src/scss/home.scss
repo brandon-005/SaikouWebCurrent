@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: #121315 !important;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, rgba(18, 19, 21, 0.80), rgba(18, 19, 21, 0.84), rgba(18, 19, 21, 0.87), rgba(18, 19, 21, 1), rgba(18, 19, 21, 1)), url("../../images/hero_image.webp") !important; 
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center -6em !important;
+    padding-bottom: 250px;
+}
+
+/* Resizing image for larger screens */
+@media only screen and (min-width: 1000px) {
+    .background {
+      
+        background-position: center bottom !important;
+        padding-bottom: 350px;
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+    .background {
+        background: linear-gradient(to bottom, rgba(18, 19, 21, 0.80), rgba(18, 19, 21, 0.84), rgba(18, 19, 21, 0.95), rgba(18, 19, 21, 1), rgba(18, 19, 21, 1)), url("../../images/hero_image.webp") !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center bottom !important;
+        padding-bottom: 500px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .background {
+        padding-bottom: 500px;
+    }
+}
+
+.navbar {
+    border-radius: 10px;
+    padding: 0.8em 0 0.8em 0 !important;
+    background: #0C0D0E;
+  }
+
+.navbar-brand img {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 0.8em;
+    padding: 0 !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+
+    .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+.container {
+    padding: 1.25em 1.25em 0 1.25em !important;
+  }
+  
+.navbar-collapse {
+    justify-content: flex-end !important;
+  }
+
+
+
+// Hero Section
+.hero-section {
+    color: #FFFF;
+    margin-top: 8.750em;
+
+    h1 {
+        font-weight: bold;
+        font-size: 2.250em;
+    }
+
+    p {
+        font-size: 1.125em;
+        margin-top: 1.250em;
+    }
+
+    button {
+        font-weight: bold;
+        font-size: 0.875em;
+        padding: 0.938em 1.875em 0.938em 1.875em;
+        border-radius: 12px;
+        margin-top: 3.750em;
+        outline: none;
+        border: none;
+    }
+}
