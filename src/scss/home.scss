@@ -9,6 +9,10 @@ body {
     background-size: cover !important;
     background-position: center -6em !important;
     padding-bottom: 250px;
+
+    .container {
+        padding: 1.25em 1.25em 0 1.25em !important;
+      }
 }
 
 /* Resizing image for larger screens */
@@ -26,13 +30,13 @@ body {
         background-repeat: no-repeat !important;
         background-size: cover !important;
         background-position: center bottom !important;
-        padding-bottom: 500px;
+        padding-bottom: 400px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1920px) {
     .background {
-        padding-bottom: 500px;
+        padding-bottom: 600px;
     }
 }
 
@@ -57,10 +61,6 @@ body {
        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 }
-
-.container {
-    padding: 1.25em 1.25em 0 1.25em !important;
-  }
   
 .navbar-collapse {
     justify-content: flex-end !important;
@@ -91,5 +91,60 @@ body {
         margin-top: 3.750em;
         outline: none;
         border: none;
+    }
+}
+
+// Who we are section
+.about-section {
+    margin-top: -3em;
+    color: #ffff;
+    padding-left: 2.143em;
+
+    .mobile-img {
+        display: block;
+        margin: 0 auto;
+        object-position: -1.8em !important;
+    }
+
+    h1 {
+        margin-top: 2.500em;
+        font-weight: bold;
+        font-size: 1.500em;
+    }
+
+    p {
+        margin-top: 1.250em;
+        font-size: 0.875em;
+        margin-right: 3em;
+    }
+
+    button {
+        font-weight: bold;
+        font-size: 0.875em;
+        padding: 0.938em 1.875em 0.938em 1.875em;
+        border-radius: 12px;
+        margin-top: 2.500em;
+        outline: none;
+        border: none;
+    }
+}
+
+// milestones section
+.stats-section {
+    background: #15171C;
+    color: #ffff;
+    margin-top: 4.286em;
+
+    h1 {
+        padding-top: 3em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.500em;
+    }
+
+    p {
+        margin-top: 1.250em;
+        text-align: center;
+        font-size: 0.875em;
     }
 }
