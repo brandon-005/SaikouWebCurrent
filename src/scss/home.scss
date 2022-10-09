@@ -261,6 +261,7 @@ body {
     background: #15171c;
 	color: #ffff;
     margin-top: 3.750em;
+    padding-bottom: 5em;
 
     h1 {
         padding-top: 3.750em;
@@ -273,5 +274,35 @@ body {
         margin-top: 1.250em;
         font-size: 0.875em;
         text-align: left;
+    }
+
+    .roblox-button {
+        margin-top: 1.250em;
+        padding: 0.3em 0 0.3em 0;
+        background: #353A4A;
+        outline: 0;
+        border: none;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .discord-button {
+        margin-top: 1.250em;
+        padding: 0.75em 0 0.75em 0;
+        background: #7F89FF;
+        outline: 0;
+        border: none;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .twitter-button {
+        margin-top: 1.250em;
+        padding: 0.75em 0 0.75em 0;
+        background: #1EB9FF;
+        outline: 0;
+        border: none;
+        width: 100%;
+        border-radius: 12px;
     }
 }
