@@ -1,150 +1,277 @@
 body {
-    font-family: 'Montserrat', sans-serif !important;
-    background: #121315 !important;
+	font-family: 'Montserrat', sans-serif !important;
+	background: #121315 !important;
 }
 
 .background {
-    background-image: linear-gradient(to bottom, rgba(18, 19, 21, 0.80), rgba(18, 19, 21, 0.84), rgba(18, 19, 21, 0.87), rgba(18, 19, 21, 1), rgba(18, 19, 21, 1)), url("../../images/hero_image.webp") !important; 
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center -6em !important;
-    padding-bottom: 250px;
+	background-image: linear-gradient(
+			to bottom,
+			rgba(18, 19, 21, 0.8),
+			rgba(18, 19, 21, 0.84),
+			rgba(18, 19, 21, 0.87),
+			rgba(18, 19, 21, 1),
+			rgba(18, 19, 21, 1)
+		),
+		url('../../images/hero_image.webp') !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center -6em !important;
+	padding-bottom: 250px;
 
-    .container {
-        padding: 1.25em 1.25em 0 1.25em !important;
-      }
+	.container {
+		padding: 1.25em 1.25em 0 1.25em !important;
+	}
 }
 
 /* Resizing image for larger screens */
 @media only screen and (min-width: 1000px) {
-    .background {
-      
-        background-position: center bottom !important;
-        padding-bottom: 350px;
-    }
+	.background {
+		background-position: center bottom !important;
+		padding-bottom: 350px;
+	}
 }
 
 @media only screen and (min-width: 1320px) {
-    .background {
-        background: linear-gradient(to bottom, rgba(18, 19, 21, 0.80), rgba(18, 19, 21, 0.84), rgba(18, 19, 21, 0.95), rgba(18, 19, 21, 1), rgba(18, 19, 21, 1)), url("../../images/hero_image.webp") !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-position: center bottom !important;
-        padding-bottom: 400px;
-    }
+	.background {
+		background: linear-gradient(
+				to bottom,
+				rgba(18, 19, 21, 0.8),
+				rgba(18, 19, 21, 0.84),
+				rgba(18, 19, 21, 0.95),
+				rgba(18, 19, 21, 1),
+				rgba(18, 19, 21, 1)
+			),
+			url('../../images/hero_image.webp') !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: center bottom !important;
+		padding-bottom: 400px;
+	}
 }
 
 @media only screen and (min-width: 1920px) {
-    .background {
-        padding-bottom: 600px;
-    }
+	.background {
+		padding-bottom: 600px;
+	}
 }
 
 .navbar {
-    border-radius: 10px;
-    padding: 0.8em 0 0.8em 0 !important;
-    background: #0C0D0E;
-  }
+	border-radius: 10px;
+	padding: 0.8em 0 0.8em 0 !important;
+	background: #0c0d0e;
+}
 
 .navbar-brand img {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 
-    margin-left: 0.8em;
-    padding: 0 !important;
+	margin-left: 0.8em;
+	padding: 0 !important;
 }
 
 .navbar-toggler {
-    border: none !important;
+	border: none !important;
 
-    .navbar-toggler-icon {
-       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
+	.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	}
 }
-  
+
 .navbar-collapse {
-    justify-content: flex-end !important;
-  }
-
-
+	justify-content: flex-end !important;
+}
 
 // Hero Section
 .hero-section {
-    color: #FFFF;
-    margin-top: 8.750em;
+	color: #ffff;
+	margin-top: 8.75em;
 
-    h1 {
-        font-weight: bold;
-        font-size: 2.250em;
-    }
+	h1 {
+		font-weight: bold;
+		font-size: 2.25em;
+	}
 
-    p {
-        font-size: 1.125em;
-        margin-top: 1.250em;
-    }
+	p {
+		font-size: 1.125em;
+		margin-top: 1.25em;
+	}
 
-    button {
-        font-weight: bold;
-        font-size: 0.875em;
-        padding: 0.938em 1.875em 0.938em 1.875em;
-        border-radius: 12px;
-        margin-top: 3.750em;
-        outline: none;
-        border: none;
-    }
+	button {
+		font-weight: bold;
+		font-size: 0.875em;
+		padding: 0.938em 1.875em 0.938em 1.875em;
+		border-radius: 12px;
+		margin-top: 3.75em;
+		outline: none;
+		border: none;
+	}
 }
 
 // Who we are section
 .about-section {
-    margin-top: -3em;
-    color: #ffff;
-    padding-left: 2.143em;
+	margin-top: -3em;
+	color: #ffff;
+	padding-left: 2.143em;
 
-    .mobile-img {
-        display: block;
-        margin: 0 auto;
-        object-position: -1.8em !important;
-    }
+	.mobile-img {
+		display: block;
+		margin: 0 auto;
+		object-position: -1.8em !important;
+	}
 
-    h1 {
-        margin-top: 2.500em;
-        font-weight: bold;
-        font-size: 1.500em;
-    }
+	h1 {
+		margin-top: 2.5em;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
 
-    p {
-        margin-top: 1.250em;
-        font-size: 0.875em;
-        margin-right: 3em;
-    }
+	p {
+		margin-top: 1.25em;
+		font-size: 0.875em;
+		margin-right: 3em;
+	}
 
-    button {
-        font-weight: bold;
-        font-size: 0.875em;
-        padding: 0.938em 1.875em 0.938em 1.875em;
-        border-radius: 12px;
-        margin-top: 2.500em;
-        outline: none;
-        border: none;
-    }
+	button {
+		font-weight: bold;
+		font-size: 0.875em;
+		padding: 0.938em 1.875em 0.938em 1.875em;
+		border-radius: 12px;
+		margin-top: 2.5em;
+		outline: none;
+		border: none;
+	}
 }
 
 // milestones section
 .stats-section {
-    background: #15171C;
+	background: #15171c;
+	color: #ffff;
+	margin-top: 4.286em;
+
+	h1 {
+		padding-top: 3em;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	p {
+		margin-top: 1.25em;
+		text-align: center;
+		font-size: 0.875em;
+	}
+
+	.row {
+		margin-top: 2.5em;
+		padding: 0 2.143em 3em 2.143em;
+
+		.box {
+			height: 120px;
+			padding: 0 20px 16px 20px;
+			text-align: center;
+			background-color: #1f222c;
+			display: flex;
+			align-items: center; /* Vertical center alignment */
+			justify-content: center; /* Horizontal center alignment */
+			border-radius: 12px;
+			margin-bottom: 0.938em;
+
+            h2 {
+                font-weight: bold;
+                font-size: 1.750em;
+            }
+
+            p {
+                position: absolute;
+                margin-top: 5em;
+                font-size: 0.813em;
+            }
+		}
+	}
+}
+
+// games section
+.games-section {
     color: #ffff;
-    margin-top: 4.286em;
+    margin-top: 3.750em;
+    padding: 0 2.143em 0 2.143em;
 
     h1 {
-        padding-top: 3em;
-        text-align: center;
+        font-size: 1.5em;
         font-weight: bold;
-        font-size: 1.500em;
+        text-align: center;
+    }
+
+    p {
+		margin-top: 1.25em;
+		text-align: center;
+		font-size: 0.875em;
+	}
+
+    .main-image {
+        margin-top: 2.500em;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .img-container {
+        margin-top: 1.250em;
+
+        img {
+            max-width: 50px;
+            border-radius: 8px;
+            vertical-align: middle !important;
+        }
+
+        h2 {
+            padding: 0 !important;
+            margin: 0.15em 0 0 0.8em;
+            display: inline-block;
+            vertical-align: middle !important;
+            font-weight: bold;
+            font-size: 1em;
+
+            span {
+                font-weight: normal;
+                font-size: 0.85em;
+            }
+        }
+        
+    }
+
+    .game-text p {
+        text-align: left;
+    }
+
+    button {
+		font-weight: bold;
+		font-size: 0.875em;
+		padding: 0.938em 1.875em 0.938em 1.875em;
+		border-radius: 12px;
+		margin-top: 1.250em;
+		outline: none;
+		border: none;
+	}
+}
+
+// follow us section
+.follow-section {
+    padding: 0 2.143em 0 2.143em;
+    background: #15171c;
+	color: #ffff;
+    margin-top: 3.750em;
+
+    h1 {
+        padding-top: 3.750em;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: left;
     }
 
     p {
         margin-top: 1.250em;
-        text-align: center;
         font-size: 0.875em;
+        text-align: left;
     }
 }
