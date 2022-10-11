@@ -1,3 +1,10 @@
+html,body{
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+  }
+
+
 body {
 	font-family: 'Montserrat', sans-serif !important;
 	background: #121315 !important;
@@ -104,6 +111,7 @@ body {
 		margin-top: 3.75em;
 		outline: none;
 		border: none;
+		color: #121315;
 	}
 }
 
@@ -139,6 +147,7 @@ body {
 		margin-top: 2.5em;
 		outline: none;
 		border: none;
+		color: #121315;
 	}
 }
 
@@ -224,6 +233,12 @@ body {
             vertical-align: middle !important;
         }
 
+		.saikou-reveal-icon {
+			max-width: 52px;
+			background: #1F222C;
+			padding: 15px 12px 15px 12px;
+		}
+
         h2 {
             padding: 0 !important;
             margin: 0.15em 0 0 0.8em;
@@ -252,6 +267,7 @@ body {
 		margin-top: 1.250em;
 		outline: none;
 		border: none;
+		color: #121315;
 	}
 }
 
@@ -283,6 +299,7 @@ body {
         outline: 0;
         border: none;
         width: 100%;
+		height: auto;
         border-radius: 12px;
     }
 
@@ -305,4 +322,52 @@ body {
         width: 100%;
         border-radius: 12px;
     }
+}
+
+
+// Footer Section
+footer {
+	background: #0C0D0E;
+
+	.footer-links {
+		img {
+			max-width: 56px;
+			margin-bottom: 2.500em;
+		}
+
+		h6 {
+			margin-bottom: 1.250em;
+
+			a {
+				color: #ffff;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 0.875em;
+			}
+		}
+	}
+
+	hr {
+		color: #ffff;
+		width: 90%;
+		text-align: center;
+		margin: auto;
+	}
+
+	.copyright-section {
+		p {
+			color: #ffff;
+			font-size: 0.770em;
+			opacity: 0.4;
+		}
+	}
+}
+
+// Responsive Design
+@media only screen and (min-width: 493px) {
+	.stats-section {
+		.box {
+			padding: 0 34px 16px 34px !important; 
+		}
+	}
 }
