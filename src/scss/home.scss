@@ -1,9 +1,9 @@
-html,body{
+html,
+body {
 	width: 100% !important;
 	margin: 0 !important;
 	padding: 0 !important;
-  }
-
+}
 
 body {
 	font-family: 'Montserrat', sans-serif !important;
@@ -66,6 +66,35 @@ body {
 	border-radius: 10px;
 	padding: 0.8em 0 0.8em 0 !important;
 	background: #0c0d0e;
+
+	.nav-item {
+		margin-top: 3px;
+	}
+
+	.nav-item:first-child {
+		margin-left: -5em;
+
+		.nav-link::after {
+			display: block;
+			content: '';
+			width: 50px;
+			height: 1px;
+			background: white;
+			position: absolute;
+			bottom: 0;
+			left: 9.15em;
+		}
+	}
+
+	.nav-link {
+		font-weight: bold;
+		font-size: 0.875em;
+	}
+
+	.nav-item:not(:first-child) {
+		opacity: 0.4;
+		margin-left: 3.75em;
+	}
 }
 
 .navbar-brand img {
@@ -121,7 +150,7 @@ body {
 	color: #ffff;
 	padding-left: 2.143em;
 
-	.mobile-img {
+	.trophy-img {
 		display: block;
 		margin: 0 auto;
 		object-position: -1.8em !important;
@@ -185,86 +214,85 @@ body {
 			border-radius: 12px;
 			margin-bottom: 0.938em;
 
-            h2 {
-                font-weight: bold;
-                font-size: 1.750em;
-            }
+			h2 {
+				font-weight: bold;
+				font-size: 1.75em;
+			}
 
-            p {
-                position: absolute;
-                margin-top: 5em;
-                font-size: 0.813em;
-            }
+			p {
+				position: absolute;
+				margin-top: 5em;
+				font-size: 0.813em;
+			}
 		}
 	}
 }
 
 // games section
 .games-section {
-    color: #ffff;
-    margin-top: 3.750em;
-    padding: 0 2.143em 0 2.143em;
+	color: #ffff;
+	margin-top: 3.75em;
+	padding: 0 2.143em 0 2.143em;
 
-    h1 {
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: center;
-    }
+	h1 {
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+	}
 
-    p {
+	p {
 		margin-top: 1.25em;
 		text-align: center;
 		font-size: 0.875em;
 	}
 
-    .main-image {
-        margin-top: 2.500em;
-        max-width: 500px;
-        width: 100%;
-        border-radius: 12px;
-    }
+	.main-image {
+		margin-top: 2.5em;
+		max-width: 500px;
+		width: 100%;
+		border-radius: 12px;
+	}
 
-    .img-container {
-        margin-top: 1.250em;
+	.img-container {
+		margin-top: 1.25em;
 
-        img {
-            max-width: 50px;
-            border-radius: 8px;
-            vertical-align: middle !important;
-        }
+		img {
+			max-width: 50px;
+			border-radius: 8px;
+			vertical-align: middle !important;
+		}
 
 		.saikou-reveal-icon {
 			max-width: 52px;
-			background: #1F222C;
+			background: #1f222c;
 			padding: 15px 12px 15px 12px;
 		}
 
-        h2 {
-            padding: 0 !important;
-            margin: 0.15em 0 0 0.8em;
-            display: inline-block;
-            vertical-align: middle !important;
-            font-weight: bold;
-            font-size: 1em;
+		h2 {
+			padding: 0 !important;
+			margin: 0.15em 0 0 0.8em;
+			display: inline-block;
+			vertical-align: middle !important;
+			font-weight: bold;
+			font-size: 1em;
 
-            span {
-                font-weight: normal;
-                font-size: 0.85em;
-            }
-        }
-        
-    }
+			span {
+				font-weight: normal;
+				font-size: 0.85em;
+			}
+		}
+	}
 
-    .game-text p {
-        text-align: left;
-    }
+	.game-text p {
+		text-align: left;
+	}
 
-    button {
+	button {
 		font-weight: bold;
 		font-size: 0.875em;
 		padding: 0.938em 1.875em 0.938em 1.875em;
 		border-radius: 12px;
-		margin-top: 1.250em;
+		margin-top: 1.25em;
 		outline: none;
 		border: none;
 		color: #121315;
@@ -273,70 +301,69 @@ body {
 
 // follow us section
 .follow-section {
-    padding: 0 2.143em 0 2.143em;
-    background: #15171c;
+	padding: 0 2.143em 0 2.143em;
+	background: #15171c;
 	color: #ffff;
-    margin-top: 3.750em;
-    padding-bottom: 5em;
+	margin-top: 3.75em;
+	padding-bottom: 5em;
 
-    h1 {
-        padding-top: 3.750em;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: left;
-    }
+	h1 {
+		padding-top: 3.75em;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: left;
+	}
 
-    p {
-        margin-top: 1.250em;
-        font-size: 0.875em;
-        text-align: left;
-    }
+	p {
+		margin-top: 1.25em;
+		font-size: 0.875em;
+		text-align: left;
+	}
 
-    .roblox-button {
-        margin-top: 1.250em;
-        padding: 0.3em 0 0.3em 0;
-        background: #353A4A;
-        outline: 0;
-        border: none;
-        width: 100%;
+	.roblox-button {
+		margin-top: 1.25em;
+		padding: 0.3em 0 0.3em 0;
+		background: #353a4a;
+		outline: 0;
+		border: none;
+		width: 100%;
 		height: auto;
-        border-radius: 12px;
-    }
+		border-radius: 12px;
+	}
 
-    .discord-button {
-        margin-top: 1.250em;
-        padding: 0.75em 0 0.75em 0;
-        background: #7F89FF;
-        outline: 0;
-        border: none;
-        width: 100%;
-        border-radius: 12px;
-    }
+	.discord-button {
+		margin-top: 1.25em;
+		padding: 0.75em 0 0.75em 0;
+		background: #7f89ff;
+		outline: 0;
+		border: none;
+		width: 100%;
+		border-radius: 12px;
+	}
 
-    .twitter-button {
-        margin-top: 1.250em;
-        padding: 0.75em 0 0.75em 0;
-        background: #1EB9FF;
-        outline: 0;
-        border: none;
-        width: 100%;
-        border-radius: 12px;
-    }
+	.twitter-button {
+		margin-top: 1.25em;
+		padding: 0.75em 0 0.75em 0;
+		background: #1eb9ff;
+		outline: 0;
+		border: none;
+		width: 100%;
+		border-radius: 12px;
+	}
 }
-
 
 // Footer Section
 footer {
-	background: #0C0D0E;
+	background: #0c0d0e;
 
 	.footer-links {
 		img {
 			max-width: 56px;
-			margin-bottom: 2.500em;
+			margin-bottom: 2.5em;
 		}
 
 		h6 {
-			margin-bottom: 1.250em;
+			margin-bottom: 1.25em;
 
 			a {
 				color: #ffff;
@@ -357,7 +384,7 @@ footer {
 	.copyright-section {
 		p {
 			color: #ffff;
-			font-size: 0.770em;
+			font-size: 0.77em;
 			opacity: 0.4;
 		}
 	}
@@ -367,7 +394,145 @@ footer {
 @media only screen and (min-width: 493px) {
 	.stats-section {
 		.box {
-			padding: 0 34px 16px 34px !important; 
+			padding: 0 34px 16px 34px !important;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	nav {
+		.nav-twitter {
+			margin: 0 0.8em 0 2.5em;
+		}
+	}
+
+	.hero-section {
+		h1 {
+			font-size: 2.8em;
+		}
+
+		p {
+			font-size: 1.3em;
+		}
+	}
+
+	.about-section {
+		h1 {
+			font-size: 1.7em;
+		}
+
+		p {
+			font-size: 0.95em;
+		}
+
+		.trophy-img {
+			margin-top: 4em;
+		}
+	}
+
+	.stats-section {
+		h1 {
+			font-size: 1.7em;
+		}
+
+		p {
+			font-size: 0.95em;
+		}
+	}
+
+	.games-section {
+		h1 {
+			font-size: 1.7em;
+		}
+
+		.games-subheading {
+			font-size: 0.95em;
+		}
+
+		img {
+			margin: 0 !important;
+		}
+
+		.first-game {
+			padding-top: 1.8em !important;
+		}
+
+		.row {
+			margin-bottom: 4em;
+		}
+
+		.second-game {
+			padding-bottom: 5em;
+		}
+	}
+
+	.follow-section {
+		h1 {
+			font-size: 1.7em;
+		}
+
+		p {
+			font-size: 0.95em;
+		}
+
+		.roblox-button {
+			width: 10em;
+			margin-right: 1em;
+		}
+
+		.discord-button {
+			width: 10em;
+			margin-right: 1em;
+		}
+
+		.twitter-button {
+			width: 10em;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) { 
+	nav {
+		max-width: 900px !important;
+		margin: 0 auto;
+
+		.nav-item:first-child {
+			margin-left: -17.6em !important;
+		}
+
+		.nav-twitter {
+			margin: 0 2em 0 2.5em;
+		}
+	}
+
+	.about-section {
+		.container {
+		padding: 0 5em 0 8em !important;
+	}
+}
+
+	.games-section {
+		.games-subheading {
+			padding-bottom: 2.500em !important;
+		}
+
+		.first-game {
+			padding-bottom: 4em !important;
+			padding-right: 5em;
+		}
+
+		.second-game {
+			padding-bottom: 8.5em !important;
+			padding-right: 5em;
+		}
+	}
+
+	.follow-section {
+		.megaphone-img {
+			display: block;
+  			margin-left: 0em;
+  			margin-right: auto;
+			padding-top: 3em;
 		}
 	}
 }
