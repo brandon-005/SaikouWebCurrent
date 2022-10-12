@@ -454,7 +454,7 @@ footer {
 		}
 
 		.first-game {
-			padding-top: 1.8em !important;
+			padding-top: 2em !important;
 		}
 
 		.row {
@@ -533,6 +533,29 @@ footer {
   			margin-left: 0em;
   			margin-right: auto;
 			padding-top: 3em;
+		}
+	}
+
+	footer {
+		.footer-links {
+			img {
+				max-width: 35px;
+			}
+			h6 {
+				margin-top: 0.3em;
+			}
+		}
+
+		.copyright-section {
+			margin-left: 6%;
+			text-align: left;
+		}
+
+		hr {
+			color: #ffff;
+			width: 80%;
+			text-align: center;
+			margin: auto 6% auto auto;
 		}
 	}
 }
