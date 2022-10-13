@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+    background-color: #121315 !important;
+	margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white !important;
+    font-size: 3.6rem !important;
+}
+
+p {
+    color: white !important;
+    font-size: 1.4rem !important;
+}
+
+/* BACKGROUND IMAGE */
+.background-img {
+    background-image: linear-gradient(
+			to bottom,
+			rgba(18, 19, 21, 0.8),
+			rgba(18, 19, 21, 0.84),
+			rgba(18, 19, 21, 0.87),
+			rgba(18, 19, 21, 1),
+			rgba(18, 19, 21, 1)
+		),
+		url('../../images/hero_image.webp') !important;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 70vh;
+   z-index: -1;
+}
+
+
+/* NAVIGATION */
+.navbar {
+	background-color: #0c0d0e;
+	padding: 0 !important;
+	border-radius: 1rem;
+	margin: 2rem 2rem 0 2rem;
+    height: 6.4rem;
+
+    .navbar-brand img {
+        height: 2.4rem;
+        width: 3.2rem;
+        margin-left: 3rem;
+    }
+
+    /* HAMBURGER MENU */
+	.navbar-toggler {
+		border: none !important;
+
+        .hamburger-menu {
+            margin-right: 2.2rem;
+            height: 100%;
+        }
+
+		.menu-bar {
+			display: block;
+            border-bottom: solid white;
+            border-width: 0.2rem;
+            width: 2.5rem;
+		}
+      
+		.menu-bar:not(:first-child) {
+			margin-top: 0.7rem;
+		}
+	}
+}
+
+/* HERO SECTION */
+.hero-section {
+    color: white;
+
+    p {
+        font-size: 1.8rem !important;
+    }
+}
