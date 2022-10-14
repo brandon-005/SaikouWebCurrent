@@ -1,31 +1,52 @@
-* {
-	box-sizing: border-box;
-}
-
-html {
+:root {
 	font-size: 62.5%;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
-	font-family: 'Montserrat', sans-serif;
-    background-color: #121315 !important;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 1.6rem;
+	background-color: #121315 !important;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 
 h1 {
-    color: white !important;
-    font-size: 3.6rem !important;
+	font-weight: bold !important;
+	color: white !important;
+	font-size: 2.4rem !important;
 }
 
 p {
-    color: white !important;
-    font-size: 1.4rem !important;
+	color: white !important;
+	font-size: 1.4rem !important;
+    line-height: 26px;
+}
+
+.custom-button {
+        padding: 0;
+        font-weight: bold;
+        font-size: 1.4rem !important;
+        outline: none;
+		border: none;
+        border-radius: 1.0rem !important;
+		color: #121315;
+        height: 4.7rem;
+		padding: 0 3.0rem 0 3.0rem;
+}
+
+.content-container {
+    padding: 0 3.0rem 0 3.0rem;
 }
 
 /* BACKGROUND IMAGE */
 .background-img {
-    background-image: linear-gradient(
+	background-image: linear-gradient(
 			to bottom,
 			rgba(18, 19, 21, 0.8),
 			rgba(18, 19, 21, 0.84),
@@ -34,17 +55,17 @@ p {
 			rgba(18, 19, 21, 1)
 		),
 		url('../../images/hero_image.webp') !important;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 70vh;
-   z-index: -1;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70vh;
+	z-index: -1;
+	opacity: 0.5;
 }
-
 
 /* NAVIGATION */
 .navbar {
@@ -52,30 +73,30 @@ p {
 	padding: 0 !important;
 	border-radius: 1rem;
 	margin: 2rem 2rem 0 2rem;
-    height: 6.4rem;
+	height: 6.4rem;
 
-    .navbar-brand img {
-        height: 2.4rem;
-        width: 3.2rem;
-        margin-left: 3rem;
-    }
+	.navbar-brand img {
+		height: 2.4rem;
+		width: 3.2rem;
+		margin-left: 3rem;
+	}
 
-    /* HAMBURGER MENU */
+	/* HAMBURGER MENU */
 	.navbar-toggler {
 		border: none !important;
 
-        .hamburger-menu {
-            margin-right: 2.2rem;
-            height: 100%;
-        }
+		.hamburger-menu {
+			margin-right: 2.2rem;
+			height: 100%;
+		}
 
 		.menu-bar {
 			display: block;
-            border-bottom: solid white;
-            border-width: 0.2rem;
-            width: 2.5rem;
+			border-bottom: solid white;
+			border-width: 0.2rem;
+			width: 2.5rem;
 		}
-      
+
 		.menu-bar:not(:first-child) {
 			margin-top: 0.7rem;
 		}
@@ -84,9 +105,162 @@ p {
 
 /* HERO SECTION */
 .hero-section {
-    color: white;
+	color: white;
 
-    p {
-        font-size: 1.8rem !important;
+    h1 {
+		font-size: 3.6rem !important;
+        margin-top: 14.0rem;
     }
+
+	p {
+		font-size: 1.8rem !important;
+        margin: 2.0rem 0 6.0rem 0;
+	}
+
+	.text-container {
+		padding: 0 30px 0 30px;
+	}
+}
+
+/* ABOUT SECTION */
+.about-section {
+		margin-top: 18.0rem;
+
+		.trophy-img {
+			display: block;
+			margin: auto;
+			max-width: 22.8rem;
+			max-height: 22.8rem;
+			margin-bottom: 4rem;
+		}
+
+		p {
+			margin-top: 2.0rem;
+			margin-bottom: 4.0rem;
+		}
+}
+
+/* MILESTONES SECTION */
+.milestones-section {
+	background: #15171c;
+	margin-top: 6.0rem;
+
+	h1 {
+		padding-top: 6.0rem;
+		text-align: center;
+	}
+
+	p {
+		margin-top: 2.0rem;
+		margin-bottom: 4.0rem;
+		text-align: center;
+	}
+
+	.box {
+		h2 {
+			color: white;
+			font-weight: bold;
+			font-size: 2.8rem;
+			text-align: center;
+			margin: 0 !important;
+		}
+
+		p {
+			margin-top: 0.5rem;
+			font-size: 1.3rem !important;
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.col {
+		height: 11.6rem;
+		max-width: 15rem;
+		min-width: 15.0rem;
+		display: flex !important;
+		align-items: center !important; 
+		justify-content: center !important;
+		background-color: #1F222C;
+		border-radius: 1.0rem;
+	}
+
+	.col:nth-child(1), .col:nth-child(3) {
+		margin-right: 1.5rem;
+	}
+
+	.col:nth-child(3), .col:nth-child(4) {
+		margin-top: 1.5rem;
+	}
+	
+	padding-bottom: 6.0rem;
+}
+
+/* GAMES SECTION */
+.games-section {
+	margin-top: 6.0rem;
+
+	h1 {
+		text-align: center;
+	}
+
+	.games-subheading {
+		text-align: center;
+		margin: 2.0rem 0 4.0rem 0;
+	}
+
+	.main-image {
+		display: block;
+		max-height: 47.2rem;
+		max-width: 48.9rem;
+		width: 100%;
+		border-radius: 1.0rem;
+		margin: auto auto 2.0rem auto;
+	}
+
+	.icon-container {
+		padding: auto;
+		white-space: nowrap;
+		display: flex !important;
+		justify-content: flex-start;
+		
+
+		h2, span {
+			color: white;
+			display: inline !important;
+			white-space: nowrap;
+		}
+
+		h2 {
+			font-weight: bold;
+			font-size: 1.8rem;
+		}
+
+		span {
+			font-weight: normal;
+			font-size: 1.4rem;
+			line-height: 28px;
+		}
+
+		img {
+			max-height: 4.5rem;
+			max-width: 4.5rem;
+			border-radius: 0.5rem;
+			margin: 0 2.0rem 0 0;
+		}
+	}
+
+	.game-text {
+		p {
+			margin: 2.0rem 0 2.0rem 0;
+		}
+
+		button {
+			margin-bottom: 4.0rem;
+		}
+	}
+
+	/* Unannounced Project Icon */
+	.saikou-reveal-icon {
+		background: #1f222c;
+		padding: 12px 10px 12px 10px;
+	}
 }
