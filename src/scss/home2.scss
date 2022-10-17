@@ -25,23 +25,23 @@ h1 {
 p {
 	color: white !important;
 	font-size: 1.4rem !important;
-    line-height: 26px;
+	line-height: 26px;
 }
 
 .custom-button {
-        padding: 0;
-        font-weight: bold;
-        font-size: 1.4rem !important;
-        outline: none;
-		border: none;
-        border-radius: 1.0rem !important;
-		color: #121315;
-        height: 4.7rem;
-		padding: 0 3.0rem 0 3.0rem;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.4rem !important;
+	outline: none;
+	border: none;
+	border-radius: 1rem !important;
+	color: #121315;
+	height: 4.7rem;
+	padding: 0 3rem 0 3rem;
 }
 
 .content-container {
-    padding: 0 3.0rem 0 3.0rem;
+	padding: 0 7.7% 0 7.7%;
 }
 
 /* BACKGROUND IMAGE */
@@ -101,20 +101,66 @@ p {
 			margin-top: 0.7rem;
 		}
 	}
+
+	/* LINKS */
+	.nav-item:first-child {
+		margin-left: 6.0rem;
+
+		.nav-link {
+			position: relative;
+			opacity: 1;
+		}
+
+		.nav-link::before {
+			content: '';
+			position: absolute;
+			width: 4.6rem;
+			height: 0.1rem;
+			background-color: white;
+			top: 4.6rem;
+		}
+	}
+
+	.nav-item:not(:nth-child(3)) {
+		margin-right: 6.0rem;
+	}
+
+	.nav-item:last-child {
+		margin-right: 10.0rem;
+	}
+
+	.nav-item {
+		a {
+			font-weight: bold;
+			font-size: 1.4rem;
+			opacity: 0.4;
+		}
+	}
+
+	.navbar-text img {
+		height: 2.4rem;
+		width: 2.4rem;
+	}
+
+	.navbar-text a:first-child {
+		margin-right: 4.0rem;
+	}
+
+
 }
 
 /* HERO SECTION */
 .hero-section {
 	color: white;
 
-    h1 {
+	h1 {
 		font-size: 3.6rem !important;
-        margin-top: 14.0rem;
-    }
+		margin-top: 14rem;
+	}
 
 	p {
 		font-size: 1.8rem !important;
-        margin: 2.0rem 0 6.0rem 0;
+		margin: 2rem 0 6rem 0;
 	}
 
 	.text-container {
@@ -124,35 +170,35 @@ p {
 
 /* ABOUT SECTION */
 .about-section {
-		margin-top: 18.0rem;
+	margin-top: 18rem;
 
-		.trophy-img {
-			display: block;
-			margin: auto;
-			max-width: 22.8rem;
-			max-height: 22.8rem;
-			margin-bottom: 4rem;
-		}
+	.trophy-img {
+		display: block;
+		margin: auto;
+		max-width: 22.8rem;
+		max-height: 22.8rem;
+		margin-bottom: 4rem;
+	}
 
-		p {
-			margin-top: 2.0rem;
-			margin-bottom: 4.0rem;
-		}
+	p {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
 }
 
 /* MILESTONES SECTION */
 .milestones-section {
 	background: #15171c;
-	margin-top: 6.0rem;
+	margin-top: 6rem;
 
 	h1 {
-		padding-top: 6.0rem;
+		padding-top: 6rem;
 		text-align: center;
 	}
 
 	p {
-		margin-top: 2.0rem;
-		margin-bottom: 4.0rem;
+		margin-top: 2rem;
+		margin-bottom: 4rem;
 		text-align: center;
 	}
 
@@ -175,28 +221,30 @@ p {
 	.col {
 		height: 11.6rem;
 		max-width: 15rem;
-		min-width: 15.0rem;
+		min-width: 15rem;
 		display: flex !important;
-		align-items: center !important; 
+		align-items: center !important;
 		justify-content: center !important;
-		background-color: #1F222C;
-		border-radius: 1.0rem;
+		background-color: #1f222c;
+		border-radius: 1rem;
 	}
 
-	.col:nth-child(1), .col:nth-child(3) {
+	.col:nth-child(1),
+	.col:nth-child(3) {
 		margin-right: 1.5rem;
 	}
 
-	.col:nth-child(3), .col:nth-child(4) {
+	.col:nth-child(3),
+	.col:nth-child(4) {
 		margin-top: 1.5rem;
 	}
-	
-	padding-bottom: 6.0rem;
+
+	padding-bottom: 6rem;
 }
 
 /* GAMES SECTION */
 .games-section {
-	margin-top: 6.0rem;
+	margin-top: 6rem;
 
 	h1 {
 		text-align: center;
@@ -204,16 +252,16 @@ p {
 
 	.games-subheading {
 		text-align: center;
-		margin: 2.0rem 0 4.0rem 0;
+		margin: 2rem 0 4rem 0;
 	}
 
 	.main-image {
 		display: block;
 		max-height: 47.2rem;
-		max-width: 48.9rem;
+		max-width: 50.9rem;
 		width: 100%;
-		border-radius: 1.0rem;
-		margin: auto auto 2.0rem auto;
+		border-radius: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	.icon-container {
@@ -221,9 +269,9 @@ p {
 		white-space: nowrap;
 		display: flex !important;
 		justify-content: flex-start;
-		
 
-		h2, span {
+		h2,
+		span {
 			color: white;
 			display: inline !important;
 			white-space: nowrap;
@@ -244,17 +292,17 @@ p {
 			max-height: 4.5rem;
 			max-width: 4.5rem;
 			border-radius: 0.5rem;
-			margin: 0 2.0rem 0 0;
+			margin: 0 2rem 0 0;
 		}
 	}
 
 	.game-text {
 		p {
-			margin: 2.0rem 0 2.0rem 0;
+			margin: 2rem 0 2rem 0;
 		}
 
 		button {
-			margin-bottom: 4.0rem;
+			margin-bottom: 4rem;
 		}
 	}
 
@@ -262,5 +310,130 @@ p {
 	.saikou-reveal-icon {
 		background: #1f222c;
 		padding: 12px 10px 12px 10px;
+	}
+}
+
+/* FOLLOW US SECTION */
+.follow-section {
+	background-color: #15171c;
+	margin-top: 6rem;
+
+	h1 {
+		padding-top: 6rem;
+		margin-bottom: 2rem;
+	}
+
+	button {
+		margin-top: 2rem;
+		border-radius: 1rem;
+		border: 0;
+		outline: none;
+		height: 4.7rem;
+		width: 96%;
+	}
+
+	.roblox-button {
+		background: #353a4a;
+
+		img {
+			height: 3.9rem;
+			width: 9.1rem;
+		}
+	}
+
+	.discord-button {
+		background: #7f89ff;
+	}
+
+	.twitter-button {
+		background: #1eb9ff;
+	}
+
+	padding-bottom: 6rem;
+}
+
+/* FOOTER SECTION */
+footer {
+	background-color: #0c0d0e;
+
+	.footer-links {
+		padding-top: 6rem;
+		img {
+			margin-bottom: 4rem;
+			width: 5.6rem;
+			height: 4.2rem;
+		}
+
+		h3 {
+			margin-bottom: 2rem;
+
+			a {
+				color: #ffff;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.last-link {
+		margin-bottom: 0 !important;
+	}
+
+	hr {
+		width: 100%;
+		border: none;
+		height: 2px;
+		text-align: center;
+		background-color: white;
+		margin: 4rem auto 4rem auto;
+	}
+
+	.copyright-section p {
+		font-size: 1.2rem !important;
+		opacity: 0.4;
+		margin: 0;
+		line-height: 20px;
+	}
+
+	padding-bottom: 6rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 525px) {
+	.milestones-section .col {
+		max-width: 18rem;
+		min-width: 18rem;
+	}
+}
+
+// @media(min-width: 550px) {
+// 	.content-container {
+// 		padding: 0 5rem 0 5rem;
+// 	}
+// }
+
+// @media(min-width: 655px) {
+// 	.content-container {
+// 		padding: 0 8rem 0 8rem;
+// 	}
+// }
+
+// @media(min-width: 715px) {
+// 	.content-container {
+// 		padding: 0 11rem 0 11rem;
+// 	}
+// }
+
+// @media(min-width: 758px) {
+// 	.content-container {
+// 		padding: 0 11rem 0 11rem;
+// 	}
+// }
+
+@media(min-width: 775px) {
+	.milestones-section .col {
+		max-width: 19.3rem;
+		min-width: 19.3rem;
 	}
 }
