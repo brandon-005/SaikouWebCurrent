@@ -68,6 +68,11 @@ p {
 }
 
 /* NAVIGATION */
+nav {
+	max-width: 83.2rem !important;
+	margin: 2rem auto !important;
+}
+
 .navbar {
 	background-color: #0c0d0e;
 	padding: 0 !important;
@@ -104,7 +109,7 @@ p {
 
 	/* LINKS */
 	.nav-item:first-child {
-		margin-left: 6.0rem;
+		margin-left: 6rem;
 
 		.nav-link {
 			position: relative;
@@ -122,11 +127,11 @@ p {
 	}
 
 	.nav-item:not(:nth-child(3)) {
-		margin-right: 6.0rem;
+		margin-right: 6rem;
 	}
 
 	.nav-item:last-child {
-		margin-right: 10.0rem;
+		margin-right: 14rem;
 	}
 
 	.nav-item {
@@ -143,10 +148,8 @@ p {
 	}
 
 	.navbar-text a:first-child {
-		margin-right: 4.0rem;
+		margin-right: 4rem;
 	}
-
-
 }
 
 /* HERO SECTION */
@@ -256,9 +259,7 @@ p {
 	}
 
 	.main-image {
-		display: block;
-		max-height: 47.2rem;
-		max-width: 50.9rem;
+		max-width: 48.9rem;
 		width: 100%;
 		border-radius: 1rem;
 		margin-bottom: 2rem;
@@ -273,7 +274,6 @@ p {
 		h2,
 		span {
 			color: white;
-			display: inline !important;
 			white-space: nowrap;
 		}
 
@@ -299,6 +299,7 @@ p {
 	.game-text {
 		p {
 			margin: 2rem 0 2rem 0;
+			text-align: left;
 		}
 
 		button {
@@ -319,7 +320,6 @@ p {
 	margin-top: 6rem;
 
 	h1 {
-		padding-top: 6rem;
 		margin-bottom: 2rem;
 	}
 
@@ -336,8 +336,8 @@ p {
 		background: #353a4a;
 
 		img {
-			height: 3.9rem;
-			width: 9.1rem;
+			height: 3rem;
+			width: 8rem;
 		}
 	}
 
@@ -349,7 +349,11 @@ p {
 		background: #1eb9ff;
 	}
 
-	padding-bottom: 6rem;
+	.megaphone-img {
+		height: 23.1rem;
+		width: 23.1rem;
+		margin-top: 3.5rem;
+	}
 }
 
 /* FOOTER SECTION */
@@ -400,40 +404,228 @@ footer {
 }
 
 /* RESPONSIVE DESIGN */
-@media (min-width: 525px) {
+@media (min-width: 540px) {
 	.milestones-section .col {
 		max-width: 18rem;
 		min-width: 18rem;
 	}
 }
 
-// @media(min-width: 550px) {
-// 	.content-container {
-// 		padding: 0 5rem 0 5rem;
-// 	}
-// }
+@media (min-width: 768px) {
+	nav {
+		margin: 5rem auto !important;
+	}
 
-// @media(min-width: 655px) {
-// 	.content-container {
-// 		padding: 0 8rem 0 8rem;
-// 	}
-// }
+	h1 {
+		font-size: 3rem !important;
+	}
 
-// @media(min-width: 715px) {
-// 	.content-container {
-// 		padding: 0 11rem 0 11rem;
-// 	}
-// }
+	p {
+		font-size: 1.5rem !important;
+	}
 
-// @media(min-width: 758px) {
-// 	.content-container {
-// 		padding: 0 11rem 0 11rem;
-// 	}
-// }
+	.hero-section {
+		h1 {
+			font-size: 5rem !important;
+		}
 
-@media(min-width: 775px) {
-	.milestones-section .col {
-		max-width: 19.3rem;
-		min-width: 19.3rem;
+		p {
+			font-size: 2rem !important;
+		}
+	}
+
+	.milestones-section {
+		margin-top: 10rem;
+
+		h2 {
+			font-size: 3.2rem !important;
+		}
+
+		.box p {
+			font-size: 1.4rem !important;
+		}
+
+		h1 {
+			padding-top: 10rem;
+		}
+		.col {
+			max-width: 14.7rem;
+			min-width: 14.7rem;
+			margin-right: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		padding-bottom: 10rem;
+	}
+
+	.games-section {
+		margin-top: 10rem; 
+
+		.first-game {
+			padding-top: 9rem;
+		}
+	
+		.second-game {
+			padding-bottom: 4.4rem;
+		}
+	}
+
+	.follow-section {
+		margin-top: 10rem;
+
+		.megaphone-img {
+			padding-bottom: 5rem;
+			height: 27rem;
+			width: 27rem;
+		}
+
+		button {
+			width: 12.9rem;
+			margin-right: 1rem;
+		}
+
+		.twitter-button {
+			margin-right: 0;
+		}
+	}
+
+	footer {
+		.footer-links {
+			padding-top: 8.5rem;
+
+			img {
+				width: 3.2rem;
+				height: 2.4rem;
+			}
+
+			.link-column:first-child {
+				margin-right: 4rem;
+			}
+
+			.link-column:not(:first-child) {
+				justify-content: flex-start !important;
+				padding: 0 !important;
+				margin-right: 2rem;
+			}
+
+			.link-column:last-child {
+				margin-right: 0;
+				text-align: left;
+			}
+		}
+
+		.copyright-section {
+			text-align: left;
+		}
+
+		hr {
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 3rem;
+		}
+
+		padding-bottom: 8.5rem;
 	}
 }
+
+@media (min-width: 858px) {
+	.first-game {
+		padding-top: 7.2rem;
+	}
+
+	.second-game {
+		padding-bottom: 6.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.background-img {
+		height: 80vh;
+		top: -12rem;
+	}
+	.content-container {
+		padding: 0 10% 0 10%;
+	}
+
+	h1 {
+		font-size: 3.2rem !important;
+	}
+
+	p {
+		font-size: 1.6rem !important;
+	}
+
+	.navbar {
+		.nav-item:last-child {
+			margin-right: 27rem;
+		}
+	}
+
+	.hero-section {
+		h1 {
+			font-size: 5.4rem !important;
+		}
+
+		p {
+			font-size: 2.4rem !important;
+		}
+	}
+
+	.about-section {
+		.trophy-img {
+			max-width: 31.2rem;
+			max-height: 31.2rem;
+			margin-bottom: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
+
+	.milestones-section {
+		h2 {
+			font-size: 3.6rem !important;
+		}
+
+		.col {
+			max-width: 17.8rem;
+			min-width: 17.8rem;
+			margin-right: 2rem !important;
+			margin-top: 2rem !important;
+		}
+	}
+
+	.megaphone-img {
+		height: 30rem !important;
+		width: 30rem !important;
+	}
+}
+
+@media (min-width: 1110px) {
+	.content-container {
+		padding: 0 14% 0 14%;
+	}
+}
+
+@media (min-width: 1270px) {
+	.content-container {
+		padding: 0 14% 0 14%;
+	}
+}
+
+@media (min-width: 1920px) {
+	.content-container {
+		padding: 0 304px 0 304px;
+	}
+}
+
+// // @media(min-width: 715px) {
+// // 	.content-container {
+// // 		padding: 0 11rem 0 11rem;
+// // 	}
+// // }
+
+// // @media(min-width: 758px) {
+// // 	.content-container {
+// // 		padding: 0 11rem 0 11rem;
+// // 	}
+// // }
