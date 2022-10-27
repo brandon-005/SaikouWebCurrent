@@ -41,7 +41,9 @@ p {
 }
 
 .content-container {
-	padding: 0 7.7% 0 7.7%;
+	width: 100%;
+	padding-left: 7.7%;
+	padding-right: 7.7%;
 }
 
 /* BACKGROUND IMAGE */
@@ -177,15 +179,14 @@ nav {
 
 	.trophy-img {
 		display: block;
-		margin: auto;
+		margin: 0 auto;
 		max-width: 22.8rem;
 		max-height: 22.8rem;
 		margin-bottom: 4rem;
 	}
 
 	p {
-		margin-top: 2rem;
-		margin-bottom: 4rem;
+		margin: 2rem 0 4rem 0;
 	}
 }
 
@@ -259,8 +260,6 @@ nav {
 	}
 
 	.main-image {
-		max-width: 48.9rem;
-		width: 100%;
 		border-radius: 1rem;
 		margin-bottom: 2rem;
 	}
@@ -606,15 +605,25 @@ footer {
 	}
 }
 
-@media (min-width: 1270px) {
-	.content-container {
-		padding: 0 14% 0 14%;
+@media (min-width: 1600px) {
+	.background-img {
+		height: 100vh;
+		top: -16rem;
 	}
-}
 
-@media (min-width: 1920px) {
 	.content-container {
-		padding: 0 304px 0 304px;
+		padding: 0 30.4rem 0 30.4rem;
+	}
+
+	.about-section {
+		p {
+			max-width: 36rem;
+		}
+	}
+
+	.megaphone-img {
+		height: 36rem !important;
+		width: 36rem !important;
 	}
 }
 
