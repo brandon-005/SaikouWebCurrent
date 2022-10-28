@@ -317,6 +317,7 @@ nav {
 .follow-section {
 	background-color: #15171c;
 	margin-top: 6rem;
+	padding-top: 6rem;
 
 	h1 {
 		margin-bottom: 2rem;
@@ -351,8 +352,8 @@ nav {
 	.megaphone-img {
 		height: 23.1rem;
 		width: 23.1rem;
-		margin-top: 3.5rem;
 	}
+	padding-bottom: 6rem;
 }
 
 /* FOOTER SECTION */
@@ -426,11 +427,16 @@ footer {
 	.hero-section {
 		h1 {
 			font-size: 5rem !important;
+			margin-top: 19.8rem !important;
 		}
 
 		p {
 			font-size: 2rem !important;
 		}
+	}
+
+	.about-section {
+		margin-top: 27.5rem !important;
 	}
 
 	.milestones-section {
@@ -471,9 +477,10 @@ footer {
 
 	.follow-section {
 		margin-top: 10rem;
+		padding-top: 0rem;
+		padding-bottom: 0rem;
 
 		.megaphone-img {
-			padding-bottom: 5rem;
 			height: 27rem;
 			width: 27rem;
 		}
@@ -621,9 +628,23 @@ footer {
 		}
 	}
 
+	.milestones-section .col {
+		max-width: 19.3rem !important;
+		min-width: 19.3rem !important;
+		height: 12.6rem !important;
+	}
+
 	.megaphone-img {
 		height: 36rem !important;
 		width: 36rem !important;
+	}
+
+	.link-column {
+		margin-right: 0 !important;
+	}
+
+	hr {
+		width: 80% !important;
 	}
 }
 
