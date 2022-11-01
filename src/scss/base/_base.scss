@@ -1,0 +1,22 @@
+:root {
+	font-size: 62.5%;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: #121315 !important;
+    font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+}

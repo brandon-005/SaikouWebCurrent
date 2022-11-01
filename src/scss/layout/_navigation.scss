@@ -1,0 +1,108 @@
+nav {
+	max-width: 83.2rem !important;
+	margin: 2rem auto !important;
+}
+
+.navbar {
+	background-color: #0c0d0e;
+	padding: 0 !important;
+	border-radius: 1rem;
+	margin: 2rem 2rem 0 2rem;
+	height: 6.4rem;
+
+	.navbar-brand img {
+		height: 2.4rem;
+		width: 3.2rem;
+		margin-left: 3rem;
+	}
+
+	/* HAMBURGER MENU */
+	.navbar-toggler {
+		border: none !important;
+
+		.hamburger-menu {
+			margin-right: 2.2rem;
+			height: 100%;
+		}
+
+		.menu-bar {
+			display: block;
+			border-bottom: solid white;
+			border-width: 0.2rem;
+			width: 2.5rem;
+		}
+
+		.menu-bar:not(:first-child) {
+			margin-top: 0.7rem;
+		}
+	}
+
+	/* LINKS */
+	.active {
+		position: relative;
+		opacity: 1 !important;  
+	}
+
+	.active::before {
+		content: '';
+		position: absolute;
+		width: 83%;
+		height: 0.1rem;
+		background-color: white;
+		top: 4.6rem;
+	}
+
+	.nav-item:first-child {
+		margin-left: 6rem;
+	}
+
+	.nav-item:not(:nth-child(3)) {
+		margin-right: 6rem;
+	}
+
+	.nav-item:last-child {
+		margin-right: 14rem;
+	}
+
+	.nav-item {
+		a {
+			font-weight: bold;
+			font-size: 1.4rem;
+			opacity: 0.4;
+		}
+	}
+
+	.navbar-text img {
+		height: 2.4rem;
+		width: 2.4rem;
+	}
+
+	.navbar-text a:first-child {
+		margin-right: 4rem;
+	}
+
+	.nav-discord:hover {
+		filter: invert(42%) sepia(56%) saturate(5381%) hue-rotate(224deg)
+			brightness(99%) contrast(92%);
+	}
+
+	.nav-twitter:hover {
+		filter: invert(48%) sepia(64%) saturate(1280%) hue-rotate(175deg)
+			brightness(97%) contrast(95%);
+	}
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+	nav {
+		margin: 5rem auto !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		.nav-item:last-child {
+			margin-right: 27rem;
+		}
+	}
+}
