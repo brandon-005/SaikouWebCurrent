@@ -63,7 +63,7 @@
 	}
 }
 
-/* MILESTONES SECTION */
+/* MILESTONES SECTION */ 
 .milestones-section {
 	background: #15171c;
 	margin-top: 6rem;
@@ -217,6 +217,12 @@
 
 	.about-section {
 		margin-top: 27.5rem !important;
+
+		.trophy-img {
+			max-width: 28rem;
+			max-height: 28rem;
+			margin: auto;
+	}
 	}
 
 	.milestones-section {
@@ -348,5 +354,9 @@
 		max-width: 19.3rem !important;
 		min-width: 19.3rem !important;
 		height: 12.6rem !important;
+	}
+
+	.col-custom {
+		width: 30% !important;
 	}
 }

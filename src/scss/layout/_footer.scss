@@ -86,17 +86,20 @@ footer {
 
 		hr {
 			width: 100%;
-			text-align: center;
 			margin: 0;
 			margin-bottom: 3rem;
 		}
 
 		padding-bottom: 8.5rem;
 	}
+
+	footer .col {
+		padding-left: 2.5%;
+	}
 }
 
-@media (min-width: 1600px) {
-    hr {
-		width: 90% !important;
+@media (min-width: 1330px) {
+	footer .col {
+		padding-left: 4.5%;
 	}
 }

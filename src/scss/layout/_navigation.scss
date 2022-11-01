@@ -38,24 +38,6 @@ nav {
 	}
 
 	/* LINKS */
-	.active {
-		position: relative;
-		opacity: 1 !important;  
-	}
-
-	.active::before {
-		content: '';
-		position: absolute;
-		width: 83%;
-		height: 0.1rem;
-		background-color: white;
-		top: 4.6rem;
-	}
-
-	.nav-item:first-child {
-		margin-left: 6rem;
-	}
-
 	.nav-item:not(:nth-child(3)) {
 		margin-right: 6rem;
 	}
@@ -96,6 +78,24 @@ nav {
 @media (min-width: 768px) {
 	nav {
 		margin: 5rem auto !important;
+	}
+
+	.nav-item:first-child {
+		margin-left: 6rem;
+	}
+
+	.active {
+		position: relative;
+		opacity: 1 !important;  
+	}
+
+	.active::before {
+		content: '';
+		position: absolute;
+		width: 83%;
+		height: 0.1rem;
+		background-color: white;
+		top: 4.6rem;
 	}
 }
 
