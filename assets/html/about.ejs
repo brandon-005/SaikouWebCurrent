@@ -8,6 +8,10 @@
 			content="width=device-width, initial-scale=1.0 viewport-fit=cover"
 		/>
 		<title>Saikou | About Us</title>
+		<meta
+			name="description"
+			content="Lean more about our history, our values and mission, and the products and services we offer. A great resource for anyone looking to learn more about Saikou."
+		/>
 
 		<!-- Embed - Facebook -->
 		<meta property="og:title" content="About Us" />
@@ -19,7 +23,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:image"
-			content="https://saikou.dev/assets/images/about_main.png"
+			content="https://saikou.dev/assets/images/about_main.webp"
 		/>
 
 		<!-- Embed - Twitter -->
@@ -31,15 +35,17 @@
 		/>
 		<meta
 			property="twitter:image"
-			content="https://saikou.dev/assets/images/about_main.png"
+			content="https://saikou.dev/assets/images/about_main.webp"
 		/>
 		<!-- STYLESHEET -->
 		<link rel="stylesheet" href="assets/css_final/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			rel="preload"
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-			rel="stylesheet"
+			as="style"
+			onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')"
 		/>
 
 		<!-- BOOTSTRAP CDN -->
@@ -96,10 +102,16 @@
 						</li>
 					</ul>
 					<span class="navbar-text">
-						<a href="https://discord.gg/saikou" target="_blank"
+						<a
+							href="https://discord.gg/saikou"
+							aria-label="Discord"
+							target="_blank"
 							><i class="discord-icon fa-brands fa-discord fa-2xl"></i
 						></a>
-						<a href="https://twitter.com/SaikouDev" target="_blank"
+						<a
+							href="https://twitter.com/SaikouDev"
+							aria-label="Twitter"
+							target="_blank"
 							><i class="twitter-icon fa-brands fa-twitter fa-2xl"></i
 						></a>
 					</span>
@@ -117,7 +129,7 @@
 				<div class="img-container">
 					<img
 						clas="main-img"
-						src="assets/images/about_main.png"
+						src="assets/images/about_main.webp"
 						alt="temp"
 						srcset=""
 					/>
@@ -264,7 +276,7 @@
 						<div class="col-md-6 col-lg-5 mb-5">
 							<img
 								class="img-fluid mwt-thumbnail"
-								src="assets/images/mwt_thumbnail.png"
+								src="assets/images/mwt_image.webp"
 								alt="Trophy"
 							/>
 						</div>
@@ -335,30 +347,30 @@
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/terms-of-service">Terms of Use</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/refund-policy">Refund Policy</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/privacy-policy">Privacy Policy</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-3 d-md-flex justify-content-md-start"
 							>
-								<h3 class="last-link">
+								<h2 class="last-link">
 									<a href="/community-rules">Community Rules</a>
-								</h3>
+								</h2>
 							</div>
 						</div>
 					</section>

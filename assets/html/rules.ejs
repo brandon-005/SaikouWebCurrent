@@ -8,6 +8,10 @@
 			content="width=device-width, initial-scale=1.0 viewport-fit=cover"
 		/>
 		<title>Saikou | Community Rules</title>
+		<meta
+			name="description"
+			content="Make sure to check out the Saikou Community Rules. These rules are what we ask and expect players to abide by to maintain a safe and fun environment for everyone."
+		/>
 
 		<!-- Embed - Facebook -->
 		<meta property="og:title" content="Review the Saikou Community Rules" />
@@ -19,7 +23,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:image"
-			content="https://saikou.dev/assets/images/mwt_image.png"
+			content="https://saikou.dev/assets/images/mwt_image.webp"
 		/>
 
 		<!-- Embed - Twitter -->
@@ -34,7 +38,7 @@
 		/>
 		<meta
 			property="twitter:image"
-			content="https://saikou.dev/assets/images/mwt_image.png"
+			content="https://saikou.dev/assets/images/mwt_image.webp"
 		/>
 
 		<!-- STYLESHEET -->
@@ -42,8 +46,10 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			rel="preload"
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-			rel="stylesheet"
+			as="style"
+			onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')"
 		/>
 
 		<!-- BOOTSTRAP CDN -->
@@ -102,10 +108,16 @@
 						</li>
 					</ul>
 					<span class="navbar-text">
-						<a href="https://discord.gg/saikou" target="_blank"
+						<a
+							href="https://discord.gg/saikou"
+							aria-label="Discord"
+							target="_blank"
 							><i class="discord-icon fa-brands fa-discord fa-2xl"></i
 						></a>
-						<a href="https://twitter.com/SaikouDev" target="_blank"
+						<a
+							href="https://twitter.com/SaikouDev"
+							aria-label="Twitter"
+							target="_blank"
 							><i class="twitter-icon fa-brands fa-twitter fa-2xl"></i
 						></a>
 					</span>
@@ -355,30 +367,30 @@
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/terms-of-service">Terms of Use</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/refund-policy">Refund Policy</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-2 d-md-flex justify-content-md-start"
 							>
-								<h3>
+								<h2>
 									<a href="/privacy-policy">Privacy Policy</a>
-								</h3>
+								</h2>
 							</div>
 							<div
 								class="link-column col-sm-12 col-md-3 d-md-flex justify-content-md-start"
 							>
-								<h3 class="last-link">
+								<h2 class="last-link">
 									<a href="/community-rules">Community Rules</a>
-								</h3>
+								</h2>
 							</div>
 						</div>
 					</section>

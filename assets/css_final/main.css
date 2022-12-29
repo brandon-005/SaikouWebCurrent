@@ -15,11 +15,15 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif !important;
   background-color: #121315 !important;
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
+}
+
+body.fontLoaded {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 /* MOBILE FONT SIZES */
@@ -95,8 +99,16 @@ p {
 .follow-section .discord-button {
   background: #7f89ff;
 }
+.follow-section .discord-button img {
+  width: 2.3rem;
+  height: 1.7rem;
+}
 .follow-section .twitter-button {
   background: #1eb9ff;
+}
+.follow-section .twitter-button img {
+  width: 2.2rem;
+  height: 1.8rem;
 }
 .follow-section .megaphone-img {
   height: 23.1rem;
@@ -146,10 +158,10 @@ footer .footer-links img {
   width: 5.6rem;
   height: 4.2rem;
 }
-footer .footer-links h3 {
+footer .footer-links h2 {
   margin-bottom: 2rem;
 }
-footer .footer-links h3 a {
+footer .footer-links h2 a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -158,7 +170,7 @@ footer .footer-links h3 a {
   transition: opacity;
   transition-duration: 0.5s;
 }
-footer .footer-links h3 a:hover {
+footer .footer-links h2 a:hover {
   transition: opacity;
   transition-duration: 0.5s;
   opacity: 0.6 !important;
@@ -395,8 +407,8 @@ nav {
 .about-section .trophy-img {
   display: block;
   margin: 0 auto;
-  max-width: 22.8rem;
-  max-height: 22.8rem;
+  width: 22.8rem;
+  height: 22.8rem;
   margin-bottom: 4rem;
 }
 .about-section p {
@@ -486,8 +498,8 @@ nav {
   line-height: 28px;
 }
 .games-section .icon-container img {
-  max-height: 4.5rem;
-  max-width: 4.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 0.5rem;
   margin: 0 2rem 0 0;
 }
@@ -502,6 +514,8 @@ nav {
 .games-section .saikou-reveal-icon {
   background: #1f222c;
   padding: 12px 10px 12px 10px;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 /* RESPONSIVE DESIGN */
@@ -529,8 +543,8 @@ nav {
     margin-top: 27.5rem !important;
   }
   .about-section .trophy-img {
-    max-width: 28rem;
-    max-height: 28rem;
+    width: 28rem;
+    height: 28rem;
     margin: auto;
   }
   .milestones-section {
@@ -591,8 +605,8 @@ nav {
     font-size: 2.4rem !important;
   }
   .about-section .trophy-img {
-    max-width: 31.2rem;
-    max-height: 31.2rem;
+    width: 31.2rem;
+    height: 31.2rem;
     margin-bottom: 0 !important;
     margin-right: 0 !important;
   }
@@ -716,6 +730,9 @@ nav {
 .wemake-section p {
   max-width: 36rem;
   margin: 2rem 0 4rem 0;
+}
+.wemake-section img {
+  border-radius: 1rem;
 }
 
 @media (max-width: 1817px) {
