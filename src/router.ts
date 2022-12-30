@@ -58,3 +58,12 @@ URL: https://saikou.dev/refund-policy
 export const rulespage = router.get('/community-rules', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('rules.ejs'));
 });
+
+
+/* 
+TITLE: Saikou Page Not Found
+URL: N/A
+*/
+export const pageNotFound = router.get('*', async (request: Request, response: Response) => {
+    response.send(await renderEjsFile('404.ejs'));
+});

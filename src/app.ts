@@ -3,14 +3,14 @@ import axios from 'axios';
 import { config } from 'dotenv';
 import { connect, set } from 'mongoose';
 import { green } from 'chalk';
-import { homepage, aboutpage, privacypage, refundpage, rulespage, tospage } from './router';
+import { homepage, aboutpage, privacypage, refundpage, rulespage, tospage, pageNotFound } from './router';
 import playingCount from './models/playing';
 
 config();
 const app: express.Application = express();
 
 app.use('/assets', express.static('assets'));
-app.use(homepage, aboutpage, privacypage, refundpage, rulespage, tospage);
+app.use(homepage, aboutpage, privacypage, refundpage, rulespage, tospage, pageNotFound);
 
 app.listen(4000, async () => {
     try {
