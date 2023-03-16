@@ -66,6 +66,9 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
+		<!-- ANIMATE ON SCROLL -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="background-img"></div>
@@ -122,13 +125,15 @@
 		<!-- HERO SECTION -->
 		<section class="hero-section text-center">
 			<div class="content-container">
-				<h1>Saikou</h1>
-				<div class="text-container">
-					<p>Game development studio on Roblox</p>
+				<h1 data-aos="zoom-in">Saikou</h1>
+				<div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
+					<div class="text-container">
+						<p>Game development studio on Roblox</p>
+					</div>
+					<a href="#games-scroll"
+						><button class="custom-button">SEE GAMES</button></a
+					>
 				</div>
-				<a href="#games-scroll"
-					><button class="custom-button">SEE GAMES</button></a
-				>
 			</div>
 		</section>
 
@@ -139,7 +144,11 @@
 					<div
 						class="row align-items-center justify-content-center flex-column-reverse flex-md-row"
 					>
-						<div class="col-md-6 col-lg-5">
+						<div
+							data-aos="fade-right"
+							data-aos-delay="1000"
+							class="col-md-6 col-lg-5"
+						>
 							<h1>WHO ARE WE?</h1>
 							<p>
 								Saikou is a game development studio on Roblox founded in June
@@ -147,10 +156,14 @@
 								experiences that millions of players can enjoy endlessly.
 							</p>
 							<a href="/about"
-								><button class="custom-button">LEARN MORE</button></a
+								><button class="custom-button">DISCOVER MORE</button></a
 							>
 						</div>
-						<div class="col-md-6 col-custom col-lg-5">
+						<div
+							data-aos="fade-left"
+							data-aos-delay="1000"
+							class="col-md-6 col-custom col-lg-5"
+						>
 							<img
 								class="trophy-img"
 								src="assets/images/trophy.svg"
@@ -166,10 +179,14 @@
 		<section class="milestones-section">
 			<div class="content-container">
 				<div class="container">
-					<h1>OUR MILESTONES</h1>
-					<p>*As of October 2022</p>
+					<div data-aos="zoom-in">
+						<h1>OUR MILESTONES</h1>
+						<p>*As of October 2022</p>
+					</div>
 
 					<div
+						data-aos="fade-up"
+						data-aos-easing="ease"
 						class="row row-cols-md-4 row-cols-sm-2 row-cols-xs-2 justify-content-center align-items-center"
 					>
 						<div class="col">
@@ -205,10 +222,16 @@
 		<section id="games-scroll" class="games-section">
 			<div class="content-container">
 				<div class="container">
-					<h1>OUR GAMES</h1>
-					<p class="games-subheading">Current and upcoming titles</p>
+					<div data-aos="fade-up" data-aos-easing="ease">
+						<h1>OUR GAMES</h1>
+						<p class="games-subheading">Current and upcoming titles</p>
+					</div>
 
-					<div class="row align-items-center justify-content-center">
+					<div
+						data-aos="fade-right"
+						data-aos-easing="ease"
+						class="row align-items-center justify-content-center"
+					>
 						<div class="col-md-6 col-lg-5">
 							<img
 								class="img-fluid main-image"
@@ -239,7 +262,11 @@
 						</div>
 					</div>
 
-					<div class="row align-items-center justify-content-center pt-lg-5">
+					<div
+						data-aos="fade-left"
+						data-aos-easing="ease"
+						class="row align-items-center justify-content-center pt-lg-5"
+					>
 						<div class="col-md-6 col-lg-5">
 							<img
 								class="img-fluid main-image"
@@ -364,7 +391,7 @@
 								<!-- Divider -->
 								<hr />
 								<p>
-									© 2022, Saikou. All rights reserved.<br /><br />The Saikou
+									© 2023, Saikou. All rights reserved.<br /><br />The Saikou
 									logo, website and respective assets are copyrights of
 									Saikou.<br />The saikou.dev site may not be copied or
 									duplicated in whole or part by any means without express prior
@@ -384,5 +411,14 @@
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"
 		></script>
+		<!-- ANIMATION CDN -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+			AOS.init({
+				duration: 1000,
+				easing: 'ease-out-back',
+			});
+		</script>
 	</body>
 </html>

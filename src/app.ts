@@ -1,16 +1,24 @@
 import express from 'express';
 import axios from 'axios';
+import { join } from 'path';
+import { renderFile } from 'ejs';
 import { config } from 'dotenv';
 import { connect, set } from 'mongoose';
 import { green } from 'chalk';
-import { homepage, aboutpage, privacypage, refundpage, rulespage, tospage, pageNotFound } from './router';
+import { websiteRoutes } from './router';
 import playingCount from './models/playing';
 
 config();
 const app: express.Application = express();
 
 app.use('/assets', express.static('assets'));
-app.use(homepage, aboutpage, privacypage, refundpage, rulespage, tospage, pageNotFound);
+
+app.use(websiteRoutes);
+
+/* 404 Page */
+app.get('*', async (request: express.Request, response: express.Response) => {
+    response.send(await renderFile(join(__dirname, '../assets/html/404.ejs')));
+});
 
 app.listen(4000, async () => {
     try {

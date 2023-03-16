@@ -1,7 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { Data, renderFile } from 'ejs';
 import { join } from 'path';
-// @ts-ignore
 import playingNow from './models/playing';
 
 function renderEjsFile(filename: string, data?: Data, options?: Data) {
@@ -14,7 +13,7 @@ const router = Router();
 TITLE: Saikou Home Page
 URL: https://saikou.dev/
 */
-export const homepage = router.get('/', async (request: Request, response: Response) => {
+router.get('/', async (request: Request, response: Response) => {
     const mwtPlaying = await playingNow.findOne({ gameID: 62124643 });
     response.send(await renderEjsFile('home.ejs', { mwtPlaying: mwtPlaying?.playing }));
 });
@@ -23,7 +22,7 @@ export const homepage = router.get('/', async (request: Request, response: Respo
 TITLE: Saikou About Page
 URL: https://saikou.dev/about
 */
-export const aboutpage = router.get('/about', async (request: Request, response: Response) => {
+router.get('/about', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('about.ejs'));
 });
 
@@ -31,7 +30,7 @@ export const aboutpage = router.get('/about', async (request: Request, response:
 TITLE: Saikou Privacy Policy
 URL: https://saikou.dev/privacy-policy
 */
-export const privacypage = router.get('/privacy-policy', async (request: Request, response: Response) => {
+router.get('/privacy-policy', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('privacy_policy.ejs'));
 });
 
@@ -39,7 +38,7 @@ export const privacypage = router.get('/privacy-policy', async (request: Request
 TITLE: Saikou Refund Policy
 URL: https://saikou.dev/refund-policy
 */
-export const refundpage = router.get('/refund-policy', async (request: Request, response: Response) => {
+router.get('/refund-policy', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('refund_policy.ejs'));
 });
 
@@ -47,7 +46,7 @@ export const refundpage = router.get('/refund-policy', async (request: Request, 
 TITLE: Saikou Terms Of Service
 URL: https://saikou.dev/terms-of-service
 */
-export const tospage = router.get('/terms-of-service', async (request: Request, response: Response) => {
+router.get('/terms-of-service', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('tos.ejs'));
 });
 
@@ -55,15 +54,24 @@ export const tospage = router.get('/terms-of-service', async (request: Request, 
 TITLE: Saikou Refund Policy
 URL: https://saikou.dev/refund-policy
 */
-export const rulespage = router.get('/community-rules', async (request: Request, response: Response) => {
+router.get('/community-rules', async (request: Request, response: Response) => {
     response.send(await renderEjsFile('rules.ejs'));
 });
 
 
-/* 
-TITLE: Saikou Page Not Found
-URL: N/A
-*/
-export const pageNotFound = router.get('*', async (request: Request, response: Response) => {
-    response.send(await renderEjsFile('404.ejs'));
+
+
+// --- SEO STUFF ---
+
+/* Robots Text File */
+router.get('/robots.txt', async (request: Request, response: Response) => {
+    response.type('text/plain')
+    response.send(`Sitemap: https://saikou.dev/sitemap.txt`);
 });
+
+/* Sitemap */
+router.get('/sitemap.txt', async (request: Request, response: Response) => {
+   response.sendFile(join(__dirname, '../assets/data/sitemap.txt'))
+});
+
+export const websiteRoutes = router;
